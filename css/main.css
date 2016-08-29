@@ -1,0 +1,28 @@
+html{
+  width: 100%;
+}
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+.logo{
+  width: 28%;
+  margin: 0 auto;
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
+}
+.searchContainer{
+  list-style-type: none;
+  margin-bottom: 1.875em;
+}
+.searchContainer li{
+  display: inline-block;
+}
+.ig{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1.975em;
+}
+#twitter{
+  text-align: center;
+}

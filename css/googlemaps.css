@@ -1,0 +1,15 @@
+/*ALL OF KEVINS CODE*/
+body {
+    font:14px sans-serif;
+}
+input {
+    margin: 0.6em 0.6em 0;
+    width:398px;
+}
+#map_canvas {
+    height: 400px;
+    width: 100%;
+    margin: 0.6em;
+    border: 2px solid #405DE6;
+    border-radius: 5px;
+}
