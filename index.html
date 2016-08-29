@@ -1,35 +1,70 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:600italic" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="./googlemaps.css" media="screen" title="no title" charset="utf-8">
-    <title>Maps</title>
-</head>
-<body>
-<h1>Where are you?</h1>
+    <title>Mapstagram</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8"> <!--KCODE -->
+    <link rel="stylesheet" href="css/googlemaps.css" media="screen" title="no title" charset="utf-8"><!--KCODE -->
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/logo.png" alt="Mapstagram logo">
+    </div>
+    <div class="mainContainer">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active nav-parent"><a class="links" href="#home">Maps</a></li>
+        <li class="nav-parent"><a class="links" href="#gallery">Instagram</a></li>
+        <li class="nav-parent"><a class="links" href="#twitter">Twitter</a></li>
+      </ul>
+      <div id="home" class="page">
+        <ul class="searchContainer">
+          <li>
+            <h2>Where are you?</h2>
+            <!-- <div id="input">
+              <input id="location" type="text"/>
+              <button id="submit" type="submit">Search</button>
+            </div>
+            <br>
+            <div id="map-canvas">
+            </div> -->
+            <input id="searchTextField" type="text" size="50">
+          </li>
+          <li>
+            <h2>What are you looking for?</h2>
+            <input id="extraSearch" type="text" size="50" placeholder="Enter desired search">
+            <button id="setQuery" type="text">Search</button>
+          </li>
+        </ul>
+        <div id="map_canvas"></div>
+      </div>
+    </div>
 
-<!-- <div id="input">
-  <input id="location" type="text"/>
-  <button id="submit" type="submit">Search</button>
-</div>
-<br>
-<div id="map-canvas">
-</div> -->
-<input id="searchTextField" type="text" size="50">
-<h3>What are you looking for?</h3>
-<input id="extraSearch" type="text" size="50" placeholder="Enter desired search">
-<button id="setQuery" type="text">Search</button>
+    <!-- INSTAGRAM-->
+    <div id="gallery" class="page">
+      <div class="ig">
+        <img src="img/ig.png">
+      </div>
+    </div>
 
-<div id="map_canvas"></div>
+    <!--Twitter -->
+    <div id="twitter" class="page">
+      <h2>JavaScript Tweets</h2>
+      <ol id="tweets"></ol>
+      <a id="submit" href="#">Show Tweets</a>
+    </div>
+
+
+
+
+  <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLNlsiCTkVywQYXCgmy4Fou9sluQ1rd2o"></script>﻿ -->
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYrdvflKEcxEgOvLDvkFDi10XesdpzPzs&libraries=places"></script>
-
   <!-- <script src="map_Skeleton.js"></script>
   <script src="mapoptions.js"></script> -->
-  <script src="googlemaps.js"></script>
+  <script src="js/googlemaps.js"></script><!--KCODE -->
+  <script src="js/app.js"></script>
+  <script src="js/tweet.js"></script>
   </body>
-  </html>
+</html>
